@@ -1,0 +1,151 @@
+/*Declaring variables to used as colors throughout the CSS */
+:root {
+    --black : black;
+    --teal : teal;
+}
+/*Formatting the header to allow name, picture, and links to space and align properly */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background-color:var(--black);
+    color: var(--black);
+  }
+
+  /*adjsting h1 and h2 fonts and colors */
+h1 {
+    font-size: 200%;
+    background-color:var(--teal);
+  }
+  
+h2 {
+    margin: 4% 0;
+    font-size: 275%;
+  }
+ /*ensuring the format of the nav links are aligned and not bullet pointed */ 
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 275px;
+    list-style: none;
+  }
+/*putting the underline on the links */
+nav ul li {
+    border-style: none none solid none;
+    border-color: var(--teal);
+    border-width: 3px;
+  }
+  
+ /*adjusting text */ 
+nav a {
+    color: var(--teal);
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+/*formatting the main components of the body to align properly along the page */
+body #about-me,.work,#contact-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+  }
+
+  /*added the line to the right of each category */
+body section h3 {
+      padding: 5%;
+      border-right: 3px;
+      border-style: none solid none none;
+      min-width: 10vw;
+  }
+#about-me p {
+      padding : 5%;
+  }
+
+/*formatting the contact me list with spacing and list styling */
+div ul {
+    display: flex;
+    justify-content: left;
+    min-width: 75vw;
+    list-style: none;
+    padding: 5%;
+  }
+ div ul li {
+    padding: 5%;
+  }
+
+ /*creating flex characteristics within the work sub category */ 
+#work {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+  }
+
+/*creating flex charactaristics and spacing within the projects category */
+.projects {
+      justify-content: center;
+      margin: 5%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
+
+  /*adjusting the borders,coloring, and flex characteristics of each section */
+.projects div {
+    margin:auto;
+    justify-content: left;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    border-style: solid;
+    border-width: 5px;
+    border-color: var(--teal);
+    z-index: auto;
+    background-color: var(--teal);
+  }
+/*sizing characteristics unique to the first project are added */
+#project1 {
+      min-width: 500px;
+      min-height: 500px;
+      flex: 0 1 100%;
+      max-width: 50vw;
+  }
+
+/*sizing characteristics of the other two projects */
+ #project2, #project3 {
+    min-width: 300px;
+    min-height: 300px;
+    width: 30%;
+}
+
+/*making the images fit their containers */
+a img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    object-fit: fill;
+}
+
+/*changing background colors */
+div h4 {
+      background-color:var(--teal);
+  }
+#work p {
+      background-color:var(--teal);
+  }
+
+
+/*using media screen to adjust the projects sections to consume more screen, and force them to stack*/
+@media screen and (max-width: 800px) {
+    .projects {
+        width: 50%;
+
+    }
+    }
+@media screen and (max-width: 800px) {
+     .projects {
+         width: 100%;
+    
+    }
+    }
