@@ -5,19 +5,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-    <header>
-        <h1>Mitchell Mudgett</h1>
+    <header class="nav">
+        <h1 class="nav-item">Mitchell Mudgett</h1>
         <img src="Images/iconpicture.jpeg" width="100" height="100" alt="Picture of myself">
-        <nav>
+        <nav class="nav-item" >
           <ul>
-            <li><a href="#about-me">About Me</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#contact-me">Contact Me</a></li>
-            <li><a href="https://media.istockphoto.com/vectors/resume-template-can-be-use-as-letterhead-or-cover-letter-professional-vector-id981458606">Resume</a></li>
+            <li class="p-3"><a href="#about-me">About Me</a></li>
+            <li class="p-3"><a href="#work">Work</a></li>
+            <li class="p-3"><a href="#contact-me">Contact Me</a></li>
+            <li class="p-3"><a href="https://media.istockphoto.com/vectors/resume-template-can-be-use-as-letterhead-or-cover-letter-professional-vector-id981458606">Resume</a></li>
           </ul>
         </nav>
     </header>
@@ -34,30 +35,30 @@
     <section id = "work">
         <h3>Work</h3>
         
-        <div class="projects">
-            <div id = "project1">
-                <a href="https://github.com/MitchellM27/Code-Refactor">
-                    <img src="Images/Project1stock.jpeg" alt="Project 1 picture">
+        <div class="projects d-flex row container">
+            <div id = "project1" class="card col-12">
+                <a href="https://mitchellm27.github.io/Stock-Finder-Application/">
+                    <img src="Images/stockApp.png" alt="Project 1 picture">
                 </a>
-                <h4>Code Refactor</h4>
-                <p>HTML & CSS</p>
+                <h4 class="card-title">Stock Finder Application</h4>
+                <p class="card-text">Project 1: HTML, Javascript, Server Side APIs</p>
             </div>
 
-            <div id = "project2">
-                <a href="https://github.com/MitchellM27/Portfolio">
-                    <img src="Images/project2stockimg.jpeg" alt="Project 2 picture">
+            <div id = "project2" class="card col-4 justify-content-around">
+                <a href="https://mitchellm27.github.io/Weather-Dashboard/">
+                    <img src="Images/weatherDashboard.png" alt="Project 2 picture">
                 </a>
-                <h4>Portfolio</h4>
-                <p>HTML & CSS</p>
+                <h4 class="card-title">Weather Dashboard</h4>
+                <p class="card-text">HTML, CSS, Javascript</p>
 
             </div>
 
-            <div id = "project3">
-                <a href="https://github.com/MitchellM27/Homework-3">
-                    <img src="Images/project3stockimg.jpeg" alt="Project 3 picture">
+            <div id = "project3" class="card col-4 justify-content-around">
+                <a href="https://mitchellm27.github.io/Work-Day-Scheduler/">
+                    <img src="Images/workDayScheduler.png" alt="Project 3 picture">
                 </a>
-                <h4>Homework 4</h4>
-                <p>HTML & CSS</p>
+                <h4 class="card-title">Work Day Scheduler</h4>
+                <p class="card-text">HTML, CSS, Javascript</p>
 
             </div>
         </div>
@@ -72,6 +73,7 @@
                 <li>(619)228-3529</li>
                 <li>mitchellm27@gmail.com</li>
                 <li><a href="https://github.com/MitchellM27">Github</a></li>
+                <li><a href="https://www.linkedin.com/in/mitchell-mudgett-1679041b1/">LinkedIn</a></li>
             </ul>
         </div>    
     </section>

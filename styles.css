@@ -32,9 +32,9 @@ nav ul {
   }
 /*putting the underline on the links */
 nav ul li {
-    border-style: none none solid none;
+    /* border-style: none none solid none;
     border-color: var(--teal);
-    border-width: 3px;
+    border-width: 3px; */
   }
   
  /*adjusting text */ 
@@ -93,11 +93,11 @@ div ul {
 
   /*adjusting the borders,coloring, and flex characteristics of each section */
 .projects div {
-    margin:auto;
+    /* margin:auto;
     justify-content: left;
     display: flex;
     flex-direction: column;
-    flex-shrink: 1;
+    flex-shrink: 1; */
     border-style: solid;
     border-width: 5px;
     border-color: var(--teal);
@@ -106,17 +106,17 @@ div ul {
   }
 /*sizing characteristics unique to the first project are added */
 #project1 {
-      min-width: 500px;
+      /* min-width: 500px;
       min-height: 500px;
       flex: 0 1 100%;
-      max-width: 50vw;
+      max-width: 50vw; */
   }
 
 /*sizing characteristics of the other two projects */
  #project2, #project3 {
-    min-width: 300px;
+    /* min-width: 300px;
     min-height: 300px;
-    width: 30%;
+    width: 30%; */
 }
 
 /*making the images fit their containers */
